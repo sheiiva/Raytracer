@@ -15,10 +15,13 @@ enable_testing()
 
 set(SOURCES
     maths/Vector/tests/Vector_tests.cpp
+    raytracer/Ray/tests/Ray_tests.cpp
+    raytracer/Ray/Ray.cpp
 )
 
 set(HEADERS
     maths/Vector/Vector.hpp
+    raytracer/Ray/Ray.hpp
 )
 
 add_executable(
@@ -30,6 +33,7 @@ add_executable(
 target_include_directories(tests
     PRIVATE
         maths/Vector
+        raytracer/Ray
 )
 
 target_link_libraries(

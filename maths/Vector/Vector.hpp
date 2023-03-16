@@ -196,6 +196,6 @@
                 std::array<double, N> _data;
         };
 
-    }
+    } /* namespace Maths */
 
 #endif /* !VECTOR_HPP_ */
