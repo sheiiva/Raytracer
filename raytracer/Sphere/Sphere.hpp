@@ -25,7 +25,7 @@
                 Sphere(Sphere const& b) noexcept = default;
                 Sphere(Sphere&& b) noexcept = default;
                 ~Sphere() noexcept = default;
-        
+
                 Sphere& operator=(Sphere const& rhs) noexcept = default;
                 Sphere& operator=(Sphere&& rhs) noexcept = default;
 

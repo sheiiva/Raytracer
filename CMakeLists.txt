@@ -19,12 +19,16 @@ set(SOURCES
     raytracer/Ray/Ray.cpp
     raytracer/Sphere/tests/Sphere_tests.cpp
     raytracer/Sphere/Sphere.cpp
+    raytracer/Camera/tests/Camera_tests.cpp
+    raytracer/Camera/Camera.cpp
+
 )
 
 set(HEADERS
     maths/Vector/Vector.hpp
     raytracer/Ray/Ray.hpp
     raytracer/Sphere/Sphere.hpp
+    raytracer/Camera/Camera.hpp
 )
 
 add_executable(
@@ -38,6 +42,7 @@ target_include_directories(tests
         maths/Vector
         raytracer/Ray
         raytracer/Sphere
+        raytracer/Camera
 )
 
 target_link_libraries(
