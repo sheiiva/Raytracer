@@ -1,6 +1,6 @@
 /* File: Ray.cpp
 **
-** Description: Declaration of the Ray class
+** Description: Definition of the Ray class
 **
 ** 2023, March 16
 ** Author: Corentin COUTRET-ROZET (corentin.rozet@epitech.eu)

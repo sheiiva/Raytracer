@@ -28,9 +28,10 @@
                 Ray& operator=(Ray const& rhs) noexcept;
                 Ray& operator=(Ray&& rhs) noexcept;
 
+                // Getters
                 Maths::Vector<3> const& getOrigin() const noexcept;
                 Maths::Vector<3> const& getDirection() const noexcept;
-
+                // Setters
                 void setOrigin(Maths::Vector<3> const& origin) noexcept;
                 void setDirection(Maths::Vector<3> const& direction) noexcept;
 

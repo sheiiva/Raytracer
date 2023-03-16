@@ -1,6 +1,6 @@
 /* File: Ray_tests.cpp
 **
-** Description: [DESCRIPTION]
+** Description: Tests for the Ray class
 **
 ** 2023, March 16
 ** Author: Corentin COUTRET-ROZET (corentin.rozet@epitech.eu)

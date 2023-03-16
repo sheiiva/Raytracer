@@ -17,11 +17,14 @@ set(SOURCES
     maths/Vector/tests/Vector_tests.cpp
     raytracer/Ray/tests/Ray_tests.cpp
     raytracer/Ray/Ray.cpp
+    raytracer/Sphere/tests/Sphere_tests.cpp
+    raytracer/Sphere/Sphere.cpp
 )
 
 set(HEADERS
     maths/Vector/Vector.hpp
     raytracer/Ray/Ray.hpp
+    raytracer/Sphere/Sphere.hpp
 )
 
 add_executable(
@@ -34,6 +37,7 @@ target_include_directories(tests
     PRIVATE
         maths/Vector
         raytracer/Ray
+        raytracer/Sphere
 )
 
 target_link_libraries(

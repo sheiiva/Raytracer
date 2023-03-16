@@ -1,6 +1,6 @@
 /* File: Vector_tests.cpp
 **
-** Description: [DESCRIPTION]
+** Description: Tests for the Vector class
 **
 ** 2023, March 16
 ** Author: Corentin COUTRET-ROZET (corentin.rozet@epitech.eu)

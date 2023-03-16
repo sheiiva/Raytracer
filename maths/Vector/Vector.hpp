@@ -84,7 +84,7 @@
                     return !(*this == rhs);
                 }
 
-                Vector operator+(Vector const& rhs) noexcept
+                Vector operator+(Vector const& rhs) const noexcept
                 {
                     Vector<N> result;
 
@@ -100,7 +100,7 @@
                     return *this;
                 }
 
-                Vector operator-(Vector const& rhs) noexcept
+                Vector operator-(Vector const& rhs) const noexcept
                 {
                     Vector<N> result;
 
@@ -116,7 +116,7 @@
                     return *this;
                 }
 
-                Vector operator*(Vector const& rhs) noexcept
+                Vector operator*(Vector const& rhs) const noexcept
                 {
                     Vector<N> result;
 
@@ -132,7 +132,7 @@
                     return *this;
                 }
 
-                Vector operator/(Vector const& rhs)
+                Vector operator/(Vector const& rhs) const
                 {
                     Vector<N> result;
 
@@ -148,7 +148,7 @@
                     return *this;
                 }
 
-                Vector operator*(double const& rhs) noexcept
+                Vector operator*(double const& rhs) const noexcept
                 {
                     Vector<N> result;
 
@@ -164,7 +164,7 @@
                     return *this;
                 }
 
-                Vector operator/(double const& rhs)
+                Vector operator/(double const& rhs) const
                 {
                     Vector<N> result;
 
@@ -180,8 +180,11 @@
                     return *this;
                 }
 
-            public:
-                std::size_t length() const noexcept { return N; }
+                // Methods
+                std::size_t length() const noexcept
+                {
+                    return N;
+                }
 
                 double dot(Vector const& rhs) const noexcept
                 {
