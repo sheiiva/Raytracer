@@ -254,6 +254,14 @@ TEST(Vector, Lenght)
     EXPECT_EQ(v2.length(), 6);
 }
 
+TEST(Vector, Dot)
+{
+    Maths::Vector<3> v1(1, 2, 3);
+    Maths::Vector<3> v2(4, 5, 6);
+
+    EXPECT_EQ(v1.dot(v2), 32);
+}
+
 int main(int argc, char **argv)
 {
     ::testing::InitGoogleTest(&argc, argv);

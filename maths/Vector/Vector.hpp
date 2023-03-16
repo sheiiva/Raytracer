@@ -183,6 +183,15 @@
             public:
                 std::size_t length() const noexcept { return N; }
 
+                double dot(Vector const& rhs) const noexcept
+                {
+                    double result = 0;
+
+                    for (std::size_t i = 0; i < N; i++)
+                        result += _data[i] * rhs[i];
+                    return result;
+                }
+
             private:
                 std::array<double, N> _data;
         };
