@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maths_4',['Maths',['../namespaceMaths.html',1,'']]]
+  ['hit_7',['hit',['../classRayTracer_1_1Sphere.html#a27c55c0c100077918c3f6abf9b82cfcd',1,'RayTracer::Sphere']]]
 ];

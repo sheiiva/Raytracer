@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['length_3',['length',['../classMaths_1_1Vector.html#a700179cd4b5657ad0643fd16b931c92a',1,'Maths::Vector']]]
+  ['getcenter_5',['getCenter',['../classRayTracer_1_1Sphere.html#a8cee3fd848ece6e7c038377e5a2c696b',1,'RayTracer::Sphere']]],
+  ['getradius_6',['getRadius',['../classRayTracer_1_1Sphere.html#a55b5f65edff5865c9938716b515dd8f0',1,'RayTracer::Sphere']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['camera_1',['Camera',['../classRayTracer_1_1Camera.html',1,'RayTracer']]]
+  ['camera_3',['Camera',['../classRayTracer_1_1Camera.html',1,'RayTracer']]]
 ];

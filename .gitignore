@@ -48,6 +48,5 @@ build
 # Other files
 .vscode
 
-# Raytracer
-raytracer
+# RayTracer
 *.ppm

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Raytracer: raytracer/Camera/Camera.cpp Source File</title>
+<title>RayTracer: raytracer/Camera/Camera.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Raytracer
+   <div id="projectname">RayTracer
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
    <div id="projectbrief">Hand made raytracer engine in C++.</div>
@@ -83,24 +83,24 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Camera.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>RayTracer</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceRayTracer.html">   13</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceRayTracer.html">RayTracer</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getOrigin() const noexcept</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getOrigin() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">return</span> _origin;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getHorizontal() const noexcept</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getHorizontal() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> _horizontal;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getVertical() const noexcept</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getVertical() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> _vertical;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getLowerLeftCorner() const noexcept</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; Camera::getLowerLeftCorner() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> _lowerLeftCorner;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
@@ -125,15 +125,17 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        _lowerLeftCorner = lowerLeftCorner;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Ray Camera::ray(<span class="keywordtype">double</span> u, <span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classRayTracer_1_1Ray.html">Ray</a> Camera::ray(<span class="keywordtype">double</span> u, <span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> direction = _lowerLeftCorner + (_horizontal * u) + (_vertical * v);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> Ray(_origin, direction - _origin);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>(_origin, direction - _origin);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="ttc" id="aclassMaths_1_1Vector_html"><div class="ttname"><a href="classMaths_1_1Vector.html">Maths::Vector&lt; 3 &gt;</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html"><div class="ttname"><a href="classRayTracer_1_1Ray.html">RayTracer::Ray</a></div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00019">Ray.hpp:20</a></div></div>
+<div class="ttc" id="anamespaceRayTracer_html"><div class="ttname"><a href="namespaceRayTracer.html">RayTracer</a></div><div class="ttdoc">Namespace containing all the raytracer classes and functions.</div><div class="ttdef"><b>Definition:</b> <a href="Camera_8cpp_source.html#l00013">Camera.cpp:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

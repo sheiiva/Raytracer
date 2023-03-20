@@ -29,7 +29,9 @@ set(SOURCES
 )
 
 set(HEADERS
+    maths/Maths.hpp
     maths/Vector/Vector.hpp
+    raytracer/RayTracer.hpp
     raytracer/Ray/Ray.hpp
     raytracer/Sphere/Sphere.hpp
     raytracer/Camera/Camera.hpp

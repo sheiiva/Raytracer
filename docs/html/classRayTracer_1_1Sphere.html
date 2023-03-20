@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Raytracer: RayTracer::Sphere Class Reference</title>
+<title>RayTracer: RayTracer::Sphere Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Raytracer
+   <div id="projectname">RayTracer
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
    <div id="projectbrief">Hand made raytracer engine in C++.</div>
@@ -63,74 +63,477 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>RayTracer</b></li><li class="navelem"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceRayTracer.html">RayTracer</a></li><li class="navelem"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classRayTracer_1_1Sphere-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RayTracer::Sphere Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class representing a primitive sphere.  
+ <a href="classRayTracer_1_1Sphere.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for RayTracer::Sphere:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRayTracer_1_1Sphere__coll__graph.png" border="0" usemap="#aRayTracer_1_1Sphere_coll__map" alt="Collaboration graph"/></div>
 <map name="aRayTracer_1_1Sphere_coll__map" id="aRayTracer_1_1Sphere_coll__map">
-<area shape="rect" title=" " alt="" coords="11,95,149,121"/>
+<area shape="rect" title="Class representing a primitive sphere." alt="" coords="11,95,149,121"/>
 <area shape="rect" href="classMaths_1_1Vector.html" title=" " alt="" coords="5,5,155,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a59b2b7daf705e84028c156fdfa075f5d"><td class="memItemLeft" align="right" valign="top"><a id="a59b2b7daf705e84028c156fdfa075f5d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Sphere</b> (<a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const &amp;center, double radius) noexcept</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Constructor/Destructor</div></td></tr>
+<tr class="memitem:a31a2d8b2818d264a23883e5f6e1880d4"><td class="memItemLeft" align="right" valign="top"><a id="a31a2d8b2818d264a23883e5f6e1880d4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a31a2d8b2818d264a23883e5f6e1880d4">Sphere</a> () noexcept=default</td></tr>
+<tr class="memdesc:a31a2d8b2818d264a23883e5f6e1880d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a31a2d8b2818d264a23883e5f6e1880d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b2b7daf705e84028c156fdfa075f5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a59b2b7daf705e84028c156fdfa075f5d">Sphere</a> (<a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const &amp;center, double radius) noexcept</td></tr>
+<tr class="memdesc:a59b2b7daf705e84028c156fdfa075f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classRayTracer_1_1Sphere.html#a59b2b7daf705e84028c156fdfa075f5d">More...</a><br /></td></tr>
 <tr class="separator:a59b2b7daf705e84028c156fdfa075f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cc98182d230cb7dd351aebd7d19101"><td class="memItemLeft" align="right" valign="top"><a id="af3cc98182d230cb7dd351aebd7d19101"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Sphere</b> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> const &amp;b) noexcept=default</td></tr>
+<tr class="memitem:af3cc98182d230cb7dd351aebd7d19101"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#af3cc98182d230cb7dd351aebd7d19101">Sphere</a> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> const &amp;b) noexcept=default</td></tr>
+<tr class="memdesc:af3cc98182d230cb7dd351aebd7d19101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="classRayTracer_1_1Sphere.html#af3cc98182d230cb7dd351aebd7d19101">More...</a><br /></td></tr>
 <tr class="separator:af3cc98182d230cb7dd351aebd7d19101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab472b4d5c4651c6584226ea80f838c2b"><td class="memItemLeft" align="right" valign="top"><a id="ab472b4d5c4651c6584226ea80f838c2b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Sphere</b> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&amp;b) noexcept=default</td></tr>
+<tr class="memitem:ab472b4d5c4651c6584226ea80f838c2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#ab472b4d5c4651c6584226ea80f838c2b">Sphere</a> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&amp;b) noexcept=default</td></tr>
+<tr class="memdesc:ab472b4d5c4651c6584226ea80f838c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="classRayTracer_1_1Sphere.html#ab472b4d5c4651c6584226ea80f838c2b">More...</a><br /></td></tr>
 <tr class="separator:ab472b4d5c4651c6584226ea80f838c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ffc1309a729caed0619a79a7d166f9"><td class="memItemLeft" align="right" valign="top"><a id="a16ffc1309a729caed0619a79a7d166f9"></a>
-<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> const &amp;rhs) noexcept=default</td></tr>
+<tr class="memitem:a98c7d7ca275064e6e467978d8b8feaff"><td class="memItemLeft" align="right" valign="top"><a id="a98c7d7ca275064e6e467978d8b8feaff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a98c7d7ca275064e6e467978d8b8feaff">~Sphere</a> () noexcept=default</td></tr>
+<tr class="memdesc:a98c7d7ca275064e6e467978d8b8feaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a98c7d7ca275064e6e467978d8b8feaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Operators</div></td></tr>
+<tr class="memitem:a16ffc1309a729caed0619a79a7d166f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a16ffc1309a729caed0619a79a7d166f9">operator=</a> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> const &amp;rhs) noexcept=default</td></tr>
+<tr class="memdesc:a16ffc1309a729caed0619a79a7d166f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator.  <a href="classRayTracer_1_1Sphere.html#a16ffc1309a729caed0619a79a7d166f9">More...</a><br /></td></tr>
 <tr class="separator:a16ffc1309a729caed0619a79a7d166f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa67f4754c8613d1f3f780f021679f88"><td class="memItemLeft" align="right" valign="top"><a id="aaa67f4754c8613d1f3f780f021679f88"></a>
-<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&amp;rhs) noexcept=default</td></tr>
+<tr class="memitem:aaa67f4754c8613d1f3f780f021679f88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#aaa67f4754c8613d1f3f780f021679f88">operator=</a> (<a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&amp;rhs) noexcept=default</td></tr>
+<tr class="memdesc:aaa67f4754c8613d1f3f780f021679f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="classRayTracer_1_1Sphere.html#aaa67f4754c8613d1f3f780f021679f88">More...</a><br /></td></tr>
 <tr class="separator:aaa67f4754c8613d1f3f780f021679f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cee3fd848ece6e7c038377e5a2c696b"><td class="memItemLeft" align="right" valign="top"><a id="a8cee3fd848ece6e7c038377e5a2c696b"></a>
-<a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getCenter</b> () const noexcept</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Getters/Setters</div></td></tr>
+<tr class="memitem:a8cee3fd848ece6e7c038377e5a2c696b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a8cee3fd848ece6e7c038377e5a2c696b">getCenter</a> () const noexcept</td></tr>
+<tr class="memdesc:a8cee3fd848ece6e7c038377e5a2c696b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the center of the sphere.  <a href="classRayTracer_1_1Sphere.html#a8cee3fd848ece6e7c038377e5a2c696b">More...</a><br /></td></tr>
 <tr class="separator:a8cee3fd848ece6e7c038377e5a2c696b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b5f65edff5865c9938716b515dd8f0"><td class="memItemLeft" align="right" valign="top"><a id="a55b5f65edff5865c9938716b515dd8f0"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getRadius</b> () const noexcept</td></tr>
-<tr class="separator:a55b5f65edff5865c9938716b515dd8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a958e7906d8daa9ee835e7ee7a775cd"><td class="memItemLeft" align="right" valign="top"><a id="a5a958e7906d8daa9ee835e7ee7a775cd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCenter</b> (<a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const &amp;center) noexcept</td></tr>
+<tr class="memitem:a5a958e7906d8daa9ee835e7ee7a775cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a5a958e7906d8daa9ee835e7ee7a775cd">setCenter</a> (<a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const &amp;center) noexcept</td></tr>
+<tr class="memdesc:a5a958e7906d8daa9ee835e7ee7a775cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the center of the sphere.  <a href="classRayTracer_1_1Sphere.html#a5a958e7906d8daa9ee835e7ee7a775cd">More...</a><br /></td></tr>
 <tr class="separator:a5a958e7906d8daa9ee835e7ee7a775cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b7bc8d209b7a4af711a20a96ba15f2"><td class="memItemLeft" align="right" valign="top"><a id="ac5b7bc8d209b7a4af711a20a96ba15f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRadius</b> (double radius) noexcept</td></tr>
+<tr class="memitem:a55b5f65edff5865c9938716b515dd8f0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a55b5f65edff5865c9938716b515dd8f0">getRadius</a> () const noexcept</td></tr>
+<tr class="memdesc:a55b5f65edff5865c9938716b515dd8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radius of the sphere.  <a href="classRayTracer_1_1Sphere.html#a55b5f65edff5865c9938716b515dd8f0">More...</a><br /></td></tr>
+<tr class="separator:a55b5f65edff5865c9938716b515dd8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b7bc8d209b7a4af711a20a96ba15f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#ac5b7bc8d209b7a4af711a20a96ba15f2">setRadius</a> (double radius) noexcept</td></tr>
+<tr class="memdesc:ac5b7bc8d209b7a4af711a20a96ba15f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the radius of the sphere.  <a href="classRayTracer_1_1Sphere.html#ac5b7bc8d209b7a4af711a20a96ba15f2">More...</a><br /></td></tr>
 <tr class="separator:ac5b7bc8d209b7a4af711a20a96ba15f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c55c0c100077918c3f6abf9b82cfcd"><td class="memItemLeft" align="right" valign="top"><a id="a27c55c0c100077918c3f6abf9b82cfcd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hit</b> (<a class="el" href="classRayTracer_1_1Ray.html">Ray</a> const &amp;ray) noexcept</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Member functions</div></td></tr>
+<tr class="memitem:a27c55c0c100077918c3f6abf9b82cfcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a27c55c0c100077918c3f6abf9b82cfcd">hit</a> (<a class="el" href="classRayTracer_1_1Ray.html">Ray</a> const &amp;ray) noexcept</td></tr>
+<tr class="memdesc:a27c55c0c100077918c3f6abf9b82cfcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the sphere is hit by a ray.  <a href="classRayTracer_1_1Sphere.html#a27c55c0c100077918c3f6abf9b82cfcd">More...</a><br /></td></tr>
 <tr class="separator:a27c55c0c100077918c3f6abf9b82cfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0060b19b06a3ae099cc32e1d8ab804ec"><td class="memItemLeft" align="right" valign="top"><a id="a0060b19b06a3ae099cc32e1d8ab804ec"></a>
-<a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_center</b></td></tr>
+<a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#a0060b19b06a3ae099cc32e1d8ab804ec">_center</a></td></tr>
+<tr class="memdesc:a0060b19b06a3ae099cc32e1d8ab804ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center of the sphere. <br /></td></tr>
 <tr class="separator:a0060b19b06a3ae099cc32e1d8ab804ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb9d9ba1b858f21d52dbd326512da49"><td class="memItemLeft" align="right" valign="top"><a id="acfb9d9ba1b858f21d52dbd326512da49"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>_radius</b> = 0.</td></tr>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html#acfb9d9ba1b858f21d52dbd326512da49">_radius</a> = 0.</td></tr>
+<tr class="memdesc:acfb9d9ba1b858f21d52dbd326512da49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of the sphere. <br /></td></tr>
 <tr class="separator:acfb9d9ba1b858f21d52dbd326512da49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Sphere_8hpp_source.html#l00020">20</a> of file <a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>Class representing a primitive sphere. </p>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8hpp_source.html#l00024">24</a> of file <a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a59b2b7daf705e84028c156fdfa075f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b2b7daf705e84028c156fdfa075f5d">&#9670;&nbsp;</a></span>Sphere() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RayTracer::Sphere::Sphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>Center of the sphere </td></tr>
+    <tr><td class="paramname">radius</td><td>Radius of the sphere </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00015">15</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : <a class="code" href="classRayTracer_1_1Sphere.html#a0060b19b06a3ae099cc32e1d8ab804ec">_center</a>(center), <a class="code" href="classRayTracer_1_1Sphere.html#acfb9d9ba1b858f21d52dbd326512da49">_radius</a>(radius)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
+<div class="ttc" id="aclassRayTracer_1_1Sphere_html_a0060b19b06a3ae099cc32e1d8ab804ec"><div class="ttname"><a href="classRayTracer_1_1Sphere.html#a0060b19b06a3ae099cc32e1d8ab804ec">RayTracer::Sphere::_center</a></div><div class="ttdeci">Maths::Vector&lt; 3 &gt; _center</div><div class="ttdoc">Center of the sphere.</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00131">Sphere.hpp:131</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Sphere_html_acfb9d9ba1b858f21d52dbd326512da49"><div class="ttname"><a href="classRayTracer_1_1Sphere.html#acfb9d9ba1b858f21d52dbd326512da49">RayTracer::Sphere::_radius</a></div><div class="ttdeci">double _radius</div><div class="ttdoc">Radius of the sphere.</div><div class="ttdef"><b>Definition:</b> <a href="Sphere_8hpp_source.html#l00133">Sphere.hpp:133</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af3cc98182d230cb7dd351aebd7d19101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cc98182d230cb7dd351aebd7d19101">&#9670;&nbsp;</a></span>Sphere() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RayTracer::Sphere::Sphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> const &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td><a class="el" href="classRayTracer_1_1Sphere.html" title="Class representing a primitive sphere.">Sphere</a> to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab472b4d5c4651c6584226ea80f838c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab472b4d5c4651c6584226ea80f838c2b">&#9670;&nbsp;</a></span>Sphere() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RayTracer::Sphere::Sphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td><a class="el" href="classRayTracer_1_1Sphere.html" title="Class representing a primitive sphere.">Sphere</a> to move </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8cee3fd848ece6e7c038377e5a2c696b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cee3fd848ece6e7c038377e5a2c696b">&#9670;&nbsp;</a></span>getCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const  &amp; RayTracer::Sphere::getCenter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the center of the sphere. </p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="classMaths_1_1Vector.html" title="Template class representing a Vector of size N.">Maths::Vector</a>&lt;3&gt; const&amp;</code> Center of the sphere </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00020">20</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classRayTracer_1_1Sphere.html#a0060b19b06a3ae099cc32e1d8ab804ec">_center</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a55b5f65edff5865c9938716b515dd8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b5f65edff5865c9938716b515dd8f0">&#9670;&nbsp;</a></span>getRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RayTracer::Sphere::getRadius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the radius of the sphere. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>double</code> Radius of the sphere </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00025">25</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classRayTracer_1_1Sphere.html#acfb9d9ba1b858f21d52dbd326512da49">_radius</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a27c55c0c100077918c3f6abf9b82cfcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c55c0c100077918c3f6abf9b82cfcd">&#9670;&nbsp;</a></span>hit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RayTracer::Sphere::hit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Ray.html">Ray</a> const &amp;&#160;</td>
+          <td class="paramname"><em>ray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the sphere is hit by a ray. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray</td><td><a class="el" href="classRayTracer_1_1Ray.html">Ray</a> to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>bool</code> True if the sphere is hit by the ray, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00040">40</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a>    oc = ray.getOrigin() - <a class="code" href="classRayTracer_1_1Sphere.html#a0060b19b06a3ae099cc32e1d8ab804ec">_center</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">double</span>              a = ray.getDirection().<a class="code" href="classMaths_1_1Vector.html#a8db6e0b7424e58c28138d36564a30376">dot</a>(ray.getDirection());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">double</span>              b = 2.0 * oc.<a class="code" href="classMaths_1_1Vector.html#a8db6e0b7424e58c28138d36564a30376">dot</a>(ray.getDirection());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">double</span>              c = oc.<a class="code" href="classMaths_1_1Vector.html#a8db6e0b7424e58c28138d36564a30376">dot</a>(oc) - <a class="code" href="classRayTracer_1_1Sphere.html#acfb9d9ba1b858f21d52dbd326512da49">_radius</a> * <a class="code" href="classRayTracer_1_1Sphere.html#acfb9d9ba1b858f21d52dbd326512da49">_radius</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">double</span>              discriminant = b * b - 4 * a * c;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> (discriminant &gt; 0);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="ttc" id="aclassMaths_1_1Vector_html"><div class="ttname"><a href="classMaths_1_1Vector.html">Maths::Vector&lt; 3 &gt;</a></div></div>
+<div class="ttc" id="aclassMaths_1_1Vector_html_a8db6e0b7424e58c28138d36564a30376"><div class="ttname"><a href="classMaths_1_1Vector.html#a8db6e0b7424e58c28138d36564a30376">Maths::Vector::dot</a></div><div class="ttdeci">double dot(Vector const &amp;rhs) const noexcept</div><div class="ttdoc">Get the norm of the vector.</div><div class="ttdef"><b>Definition:</b> <a href="Vector_8hpp_source.html#l00352">Vector.hpp:352</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaa67f4754c8613d1f3f780f021679f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa67f4754c8613d1f3f780f021679f88">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a>&amp; RayTracer::Sphere::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td><a class="el" href="classRayTracer_1_1Sphere.html" title="Class representing a primitive sphere.">Sphere</a> to move </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="classRayTracer_1_1Sphere.html" title="Class representing a primitive sphere.">Sphere</a>&amp;</code> Reference to the current sphere </dd></dl>
+
+</div>
+</div>
+<a id="a16ffc1309a729caed0619a79a7d166f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ffc1309a729caed0619a79a7d166f9">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a>&amp; RayTracer::Sphere::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td><a class="el" href="classRayTracer_1_1Sphere.html" title="Class representing a primitive sphere.">Sphere</a> to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="classRayTracer_1_1Sphere.html" title="Class representing a primitive sphere.">Sphere</a>&amp;</code> Reference to the current sphere </dd></dl>
+
+</div>
+</div>
+<a id="a5a958e7906d8daa9ee835e7ee7a775cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a958e7906d8daa9ee835e7ee7a775cd">&#9670;&nbsp;</a></span>setCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTracer::Sphere::setCenter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMaths_1_1Vector.html">Maths::Vector</a>&lt; 3 &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>center</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the center of the sphere. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>Center of the sphere </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00030">30</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classRayTracer_1_1Sphere.html#a0060b19b06a3ae099cc32e1d8ab804ec">_center</a> = center;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac5b7bc8d209b7a4af711a20a96ba15f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b7bc8d209b7a4af711a20a96ba15f2">&#9670;&nbsp;</a></span>setRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTracer::Sphere::setRadius </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the radius of the sphere. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radius</td><td>Radius of the sphere </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Sphere_8cpp_source.html#l00035">35</a> of file <a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classRayTracer_1_1Sphere.html#acfb9d9ba1b858f21d52dbd326512da49">_radius</a> = radius;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>raytracer/Sphere/<a class="el" href="Sphere_8hpp_source.html">Sphere.hpp</a></li>
 <li>raytracer/Sphere/<a class="el" href="Sphere_8cpp_source.html">Sphere.cpp</a></li>
 </ul>

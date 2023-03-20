@@ -11,13 +11,14 @@
 #ifndef MATHS_HPP_
     #define MATHS_HPP_
 
+    #include "Vector/Vector.hpp"
+
     /** \namespace Maths
      * @brief Namespace containing all the maths classes and functions.
      * 
      */
     namespace Maths
     {
-        #include "Vector/Vector.hpp"
     } /* namespace Maths */
 
 #endif /* !MATHS_HPP_ */
