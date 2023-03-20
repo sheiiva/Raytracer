@@ -35,11 +35,11 @@ jobs:
           submodules: "true"
 
       - name: Install Doxygen
-        run: sudo apt-get install doxygen -y
+        run: sudo apt-get install doxygen graphviz -y
         shell: bash
 
       - name: Generate Doxygen documentation
-        run: doxygen docs/config/Doxyfile
+        run: cmake -S . -B build && cmake --build build
         shell: bash
 
       - name: Create .nojekyll

@@ -5,7 +5,7 @@
 ###
 ### Copyright 2023, Corentin COUTRET-ROZET
 
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.20)
 
 project(
     RayTracer
@@ -50,6 +50,10 @@ target_include_directories(${PROJECT_NAME}
         raytracer/Sphere
         raytracer/Camera
 )
+
+### DOCUMENTATION ###
+
+include(docs/doxygen.cmake)
 
 ### TESTS ###
 

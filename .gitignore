@@ -47,6 +47,7 @@ build
 
 # Other files
 .vscode
+docs/html/
 
 # RayTracer
 *.ppm
