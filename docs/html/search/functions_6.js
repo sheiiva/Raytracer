@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['setcenter_65',['setCenter',['../classRayTracer_1_1Sphere.html#a5a958e7906d8daa9ee835e7ee7a775cd',1,'RayTracer::Sphere']]],
-  ['setdirection_66',['setDirection',['../classRayTracer_1_1Ray.html#a788f25c104e92d2d610de69ccf0317f6',1,'RayTracer::Ray']]],
-  ['setorigin_67',['setOrigin',['../classRayTracer_1_1Ray.html#a5188fabd13672e2fe1a3cd0ea234fdea',1,'RayTracer::Ray']]],
-  ['setradius_68',['setRadius',['../classRayTracer_1_1Sphere.html#ac5b7bc8d209b7a4af711a20a96ba15f2',1,'RayTracer::Sphere']]],
-  ['sphere_69',['Sphere',['../classRayTracer_1_1Sphere.html#a31a2d8b2818d264a23883e5f6e1880d4',1,'RayTracer::Sphere::Sphere() noexcept=default'],['../classRayTracer_1_1Sphere.html#a59b2b7daf705e84028c156fdfa075f5d',1,'RayTracer::Sphere::Sphere(Maths::Vector&lt; 3 &gt; const &amp;center, double radius) noexcept'],['../classRayTracer_1_1Sphere.html#af3cc98182d230cb7dd351aebd7d19101',1,'RayTracer::Sphere::Sphere(Sphere const &amp;b) noexcept=default'],['../classRayTracer_1_1Sphere.html#ab472b4d5c4651c6584226ea80f838c2b',1,'RayTracer::Sphere::Sphere(Sphere &amp;&amp;b) noexcept=default']]]
+  ['ray_79',['ray',['../classRayTracer_1_1Camera.html#a45e12bfe388c24637d14449464dc6c78',1,'RayTracer::Camera']]],
+  ['ray_80',['Ray',['../classRayTracer_1_1Ray.html#ab6e152a6f4e0ae5424269c2caca6e74d',1,'RayTracer::Ray::Ray() noexcept=default'],['../classRayTracer_1_1Ray.html#a68d8bca93cbbd89bd810838806f4941c',1,'RayTracer::Ray::Ray(Maths::Vector&lt; 3 &gt; const &amp;origin, Maths::Vector&lt; 3 &gt; const &amp;direction) noexcept'],['../classRayTracer_1_1Ray.html#a0d13b32f5ca17d1fdc90bf3b3e02a36b',1,'RayTracer::Ray::Ray(Ray const &amp;b) noexcept'],['../classRayTracer_1_1Ray.html#a21cb78fa5fd86b4b80658e7d8e91b64b',1,'RayTracer::Ray::Ray(Ray &amp;&amp;b) noexcept']]]
 ];

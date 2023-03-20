@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['_7eray_71',['~Ray',['../classRayTracer_1_1Ray.html#ae01cf8137a7e6a04e8d8eb721da049ca',1,'RayTracer::Ray']]],
-  ['_7esphere_72',['~Sphere',['../classRayTracer_1_1Sphere.html#a98c7d7ca275064e6e467978d8b8feaff',1,'RayTracer::Sphere']]],
-  ['_7evector_73',['~Vector',['../classMaths_1_1Vector.html#af21a28399c24c450b329fc273d4a9feb',1,'Maths::Vector']]]
+  ['vector_89',['Vector',['../classMaths_1_1Vector.html#ae8528d8429623739bcfca5ceff7be77e',1,'Maths::Vector::Vector() noexcept'],['../classMaths_1_1Vector.html#a379bca44e53c53a2a1ab8de026eb9016',1,'Maths::Vector::Vector(Args... args) noexcept'],['../classMaths_1_1Vector.html#a9e912cc7f70411ae7905c6839b97a22c',1,'Maths::Vector::Vector(Vector const &amp;b) noexcept'],['../classMaths_1_1Vector.html#ac0073cd5abf3e4a19be186408e0fa508',1,'Maths::Vector::Vector(Vector &amp;&amp;b) noexcept']]]
 ];

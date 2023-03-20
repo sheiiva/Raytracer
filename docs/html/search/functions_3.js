@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['length_51',['length',['../classMaths_1_1Vector.html#a700179cd4b5657ad0643fd16b931c92a',1,'Maths::Vector']]]
+  ['hit_65',['hit',['../classRayTracer_1_1Sphere.html#a27c55c0c100077918c3f6abf9b82cfcd',1,'RayTracer::Sphere']]]
 ];
