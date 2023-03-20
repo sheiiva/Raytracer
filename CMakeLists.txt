@@ -1,13 +1,20 @@
+### CMakeLists.txt: RayTracer
+###
+### 2023, March 20
+### Author: Corentin COUTRET-ROZET (corentin.rozet@epitech.eu)
+###
+### Copyright 2023, Corentin COUTRET-ROZET
+
 cmake_minimum_required(VERSION 3.14)
 
 project(
     RayTracer
     VERSION 0.0.1
     DESCRIPTION ""
-    HOMEPAGE_URL "https://github.com/sheiiva/NanoTekSpice"
+    HOMEPAGE_URL "https://github.com/sheiiva/RayTracer"
     LANGUAGES CXX
 )
-    
+
 set(CMAKE_CXX_STANDARD 20)
 # Place binaries and libraries according to GNU standards
 include(GNUInstallDirs)
