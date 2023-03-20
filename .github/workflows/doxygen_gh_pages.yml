@@ -13,6 +13,9 @@ on:
   workflow_dispatch:
 
 inputs:
+  github_token:
+    description: 'GitHub token for pushing GitHub pages files'
+    required: true
   branch:
     description: 'Branch name for pushing GitHub pages files'
     required: true
@@ -25,25 +28,27 @@ inputs:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v2
-          with:
-            submodules: "true"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: "true"
 
-        - name: Install Doxygen
-          run: sudo apt-get install doxygen -y
-          shell: bash
+      - name: Install Doxygen
+        run: sudo apt-get install doxygen -y
+        shell: bash
 
-        - name: Generate Doxygen documentation
-          run: doxygen docs/config/Doxyfile
-          shell: bash
+      - name: Generate Doxygen documentation
+        run: doxygen docs/config/Doxyfile
+        shell: bash
 
-        - name: Create .nojekyll
-          run: touch ${{ inputs.folder }}/.nojekyll
-          shell: bash
+      - name: Create .nojekyll
+        run: touch ${{ inputs.folder }}/.nojekyll
+        shell: bash
 
-        - name: Deploy to GitHub Pages
-          uses: JamesIves/github-pages-deploy-action@3.7.1
-          with:
-            github_token: ${{ inputs.github_token }}
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          github_token: ${{ inputs.github_token }}
+          branch: ${{ inputs.branch }}
+          folder: ${{ inputs.folder }}
