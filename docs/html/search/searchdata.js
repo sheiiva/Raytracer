@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "_cdghlmorsv~",
   1: "crsv",
   2: "mr",
-  3: "dghlosv~",
+  3: "dghlorsv~",
   4: "_",
   5: "r"
 };

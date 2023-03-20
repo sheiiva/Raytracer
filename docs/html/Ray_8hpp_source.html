@@ -89,35 +89,54 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">namespace </span><a class="code" href="namespaceRayTracer.html">RayTracer</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Ray.html">   19</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classRayTracer_1_1Ray.html">Ray</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>() noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>(<a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; origin, <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; direction) noexcept;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a> <span class="keyword">const</span>&amp; b) noexcept;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp;&amp; b) noexcept;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                ~<a class="code" href="classRayTracer_1_1Ray.html">Ray</a>() noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp; operator=(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a> <span class="keyword">const</span>&amp; rhs) noexcept;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp; operator=(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp;&amp; rhs) noexcept;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Ray.html">   23</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classRayTracer_1_1Ray.html">Ray</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="comment">// Getters</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; getOrigin() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; getDirection() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="comment">// Setters</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordtype">void</span> setOrigin(<a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; origin) noexcept;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordtype">void</span> setDirection(<a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> <span class="keyword">const</span>&amp; direction) noexcept;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> _origin;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="classMaths_1_1Vector.html">Maths::Vector&lt;3&gt;</a> _direction;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        };</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Ray.html#ab6e152a6f4e0ae5424269c2caca6e74d">   34</a></span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html#ab6e152a6f4e0ae5424269c2caca6e74d">Ray</a>() noexcept = default;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>(<a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; const&amp; origin, <a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; const&amp; direction) noexcept;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    } <span class="comment">/* namespace RayTracer */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !RAY_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassMaths_1_1Vector_html"><div class="ttname"><a href="classMaths_1_1Vector.html">Maths::Vector&lt; 3 &gt;</a></div></div>
-<div class="ttc" id="aclassRayTracer_1_1Ray_html"><div class="ttname"><a href="classRayTracer_1_1Ray.html">RayTracer::Ray</a></div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00019">Ray.hpp:20</a></div></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a> const&amp; b) noexcept;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp;&amp; b) noexcept;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Ray.html#ae01cf8137a7e6a04e8d8eb721da049ca">   58</a></span>&#160;                ~<a class="code" href="classRayTracer_1_1Ray.html">Ray</a>() noexcept = default;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp; operator=(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a> const&amp; rhs) noexcept;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp; operator=(<a class="code" href="classRayTracer_1_1Ray.html">Ray</a>&amp;&amp; rhs) noexcept;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; const&amp; <a class="code" href="classRayTracer_1_1Ray.html#a4bd618d69fd3a40efa773776210169dc">getOrigin</a>() const noexcept;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classRayTracer_1_1Ray.html#a5188fabd13672e2fe1a3cd0ea234fdea">setOrigin</a>(<a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; const&amp; origin) noexcept;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; const&amp; <a class="code" href="classRayTracer_1_1Ray.html#a61f924f1b80f6e1acd7a21bce05ca1cd">getDirection</a>() const noexcept;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classRayTracer_1_1Ray.html#a788f25c104e92d2d610de69ccf0317f6">setDirection</a>(<a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; const&amp; direction) noexcept;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            private:</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Ray.html#a1c531ed54cd7d8c8e3ddf1063b08711e">  116</a></span>&#160;                <a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; <a class="code" href="classRayTracer_1_1Ray.html#a1c531ed54cd7d8c8e3ddf1063b08711e">_origin</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Ray.html#ac5c1ea21fe2d7c2d2659445b362875ac">  118</a></span>&#160;                <a class="code" href="namespaceMaths.html">Maths</a>::Vector&lt;3&gt; <a class="code" href="classRayTracer_1_1Ray.html#ac5c1ea21fe2d7c2d2659445b362875ac">_direction</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        };</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    } <span class="comment">/* namespace RayTracer */</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !RAY_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html"><div class="ttname"><a href="classRayTracer_1_1Ray.html">RayTracer::Ray</a></div><div class="ttdoc">Class representing a ray.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00023">Ray.hpp:24</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html_a1c531ed54cd7d8c8e3ddf1063b08711e"><div class="ttname"><a href="classRayTracer_1_1Ray.html#a1c531ed54cd7d8c8e3ddf1063b08711e">RayTracer::Ray::_origin</a></div><div class="ttdeci">Maths::Vector&lt; 3 &gt; _origin</div><div class="ttdoc">Origin of the ray.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00116">Ray.hpp:116</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html_a4bd618d69fd3a40efa773776210169dc"><div class="ttname"><a href="classRayTracer_1_1Ray.html#a4bd618d69fd3a40efa773776210169dc">RayTracer::Ray::getOrigin</a></div><div class="ttdeci">Maths::Vector&lt; 3 &gt; const  &amp; getOrigin() const noexcept</div><div class="ttdoc">Get the origin of the ray.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00045">Ray.cpp:45</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html_a5188fabd13672e2fe1a3cd0ea234fdea"><div class="ttname"><a href="classRayTracer_1_1Ray.html#a5188fabd13672e2fe1a3cd0ea234fdea">RayTracer::Ray::setOrigin</a></div><div class="ttdeci">void setOrigin(Maths::Vector&lt; 3 &gt; const &amp;origin) noexcept</div><div class="ttdoc">Set the origin of the ray.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00055">Ray.cpp:55</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html_a61f924f1b80f6e1acd7a21bce05ca1cd"><div class="ttname"><a href="classRayTracer_1_1Ray.html#a61f924f1b80f6e1acd7a21bce05ca1cd">RayTracer::Ray::getDirection</a></div><div class="ttdeci">Maths::Vector&lt; 3 &gt; const  &amp; getDirection() const noexcept</div><div class="ttdoc">Get the direction of the ray.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00050">Ray.cpp:50</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html_a788f25c104e92d2d610de69ccf0317f6"><div class="ttname"><a href="classRayTracer_1_1Ray.html#a788f25c104e92d2d610de69ccf0317f6">RayTracer::Ray::setDirection</a></div><div class="ttdeci">void setDirection(Maths::Vector&lt; 3 &gt; const &amp;direction) noexcept</div><div class="ttdoc">Set the direction of the ray.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8cpp_source.html#l00060">Ray.cpp:60</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html_ab6e152a6f4e0ae5424269c2caca6e74d"><div class="ttname"><a href="classRayTracer_1_1Ray.html#ab6e152a6f4e0ae5424269c2caca6e74d">RayTracer::Ray::Ray</a></div><div class="ttdeci">Ray() noexcept=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclassRayTracer_1_1Ray_html_ac5c1ea21fe2d7c2d2659445b362875ac"><div class="ttname"><a href="classRayTracer_1_1Ray.html#ac5c1ea21fe2d7c2d2659445b362875ac">RayTracer::Ray::_direction</a></div><div class="ttdeci">Maths::Vector&lt; 3 &gt; _direction</div><div class="ttdoc">Direction of the ray.</div><div class="ttdef"><b>Definition:</b> <a href="Ray_8hpp_source.html#l00118">Ray.hpp:118</a></div></div>
+<div class="ttc" id="anamespaceMaths_html"><div class="ttname"><a href="namespaceMaths.html">Maths</a></div><div class="ttdoc">Namespace containing all the maths classes and functions.</div></div>
 <div class="ttc" id="anamespaceRayTracer_html"><div class="ttname"><a href="namespaceRayTracer.html">RayTracer</a></div><div class="ttdoc">Namespace containing all the raytracer classes and functions.</div><div class="ttdef"><b>Definition:</b> <a href="Camera_8cpp_source.html#l00013">Camera.cpp:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
