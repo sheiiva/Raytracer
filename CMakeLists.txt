@@ -23,6 +23,10 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
+### SOURCES ###
+
+include(config/dl-config++.cmake)
+
 set(SOURCES
     raytracer/Ray/Ray.cpp
     raytracer/Sphere/Sphere.cpp
@@ -50,6 +54,13 @@ target_include_directories(${PROJECT_NAME}
         raytracer/Ray
         raytracer/Sphere
         raytracer/Camera
+)
+
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        stdc++
+        config++
+        m
 )
 
 ### DOCUMENTATION ###
@@ -85,6 +96,9 @@ target_include_directories(${PROJECT_NAME}_tests
 
 target_link_libraries(
     ${PROJECT_NAME}_tests
+    stdc++
+    config++
+    m
     GTest::gtest_main
 )
 
