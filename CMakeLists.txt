@@ -1,19 +1,31 @@
-cmake_minimum_required(VERSION 3.14)
+### CMakeLists.txt: RayTracer
+###
+### 2023, March 20
+### Author: Corentin COUTRET-ROZET (corentin.rozet@epitech.eu)
+###
+### Copyright 2023, Corentin COUTRET-ROZET
+
+cmake_minimum_required(VERSION 3.20)
 
 project(
     RayTracer
     VERSION 0.0.1
     DESCRIPTION ""
-    HOMEPAGE_URL "https://github.com/sheiiva/NanoTekSpice"
+    HOMEPAGE_URL "https://github.com/sheiiva/RayTracer"
     LANGUAGES CXX
 )
-    
+
 set(CMAKE_CXX_STANDARD 20)
+include(config/versions.cmake)
 # Place binaries and libraries according to GNU standards
 include(GNUInstallDirs)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
+
+### SOURCES ###
+
+include(config/dl-config++.cmake)
 
 set(SOURCES
     raytracer/Ray/Ray.cpp
@@ -22,7 +34,9 @@ set(SOURCES
 )
 
 set(HEADERS
+    maths/Maths.hpp
     maths/Vector/Vector.hpp
+    raytracer/RayTracer.hpp
     raytracer/Ray/Ray.hpp
     raytracer/Sphere/Sphere.hpp
     raytracer/Camera/Camera.hpp
@@ -42,17 +56,22 @@ target_include_directories(${PROJECT_NAME}
         raytracer/Camera
 )
 
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        stdc++
+        config++
+        m
+)
+
+### DOCUMENTATION ###
+
+include(docs/doxygen.cmake)
+
 ### TESTS ###
 
-include(FetchContent)
-FetchContent_Declare(
-    googletest
-    URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
-)
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
-
 enable_testing()
+
+include(config/googletest-config.cmake)
 
 set(T_SOURCES
     maths/Vector/tests/Vector_tests.cpp
@@ -77,6 +96,9 @@ target_include_directories(${PROJECT_NAME}_tests
 
 target_link_libraries(
     ${PROJECT_NAME}_tests
+    stdc++
+    config++
+    m
     GTest::gtest_main
 )
 

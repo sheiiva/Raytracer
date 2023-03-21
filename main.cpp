@@ -26,7 +26,7 @@ int main()
 
     cam.setHorizontal(Maths::Vector<3>(10, 0, 0));
     cam.setVertical(Maths::Vector<3>(0, 10, 0));
-    cam.setLowerLeftCorner(Maths::Vector<3>(0, -5, 10));
+    cam.setLowerLeftCorner(Maths::Vector<3>(-5, -5, 10));
 
     for (int j = 0; j < SIZE; j++) {
         for (int i = 0; i < SIZE; i++) {

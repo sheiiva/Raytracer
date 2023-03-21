@@ -1,0 +1,54 @@
+name: 'Doxygen GitHub Pages Deploy Action'
+author: 'Corentin COUTRET ROZET'
+description: 'Make docs with Doxygen then deploy the generated HTML to GitHub pages'
+branding:
+  icon: "upload-cloud"
+  color: "purple"
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  workflow_dispatch:
+
+inputs:
+  github_token:
+    description: 'GitHub token for pushing GitHub pages files'
+    required: true
+  branch:
+    description: 'Branch name for pushing GitHub pages files'
+    required: true
+    default: "gh-pages"
+  folder:
+    description: 'Folder where Doxygen will generate the HTML build files'
+    required: true
+    default: "docs/html"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: "true"
+
+      - name: Install Doxygen
+        run: sudo apt-get install doxygen graphviz -y
+        shell: bash
+
+      - name: Generate Doxygen documentation
+        run: cmake -S . -B build && cmake --build build
+        shell: bash
+
+      - name: Create .nojekyll
+        run: touch ${{ inputs.folder }}/.nojekyll
+        shell: bash
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          github_token: ${{ inputs.github_token }}
+          branch: ${{ inputs.branch }}
+          folder: ${{ inputs.folder }}

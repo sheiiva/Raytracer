@@ -47,7 +47,10 @@ build
 
 # Other files
 .vscode
+docs/html/
 
-# Raytracer
-raytracer
+# RayTracer
 *.ppm
+
+# Config
+config/Find*.cmake
