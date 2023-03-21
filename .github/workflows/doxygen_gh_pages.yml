@@ -7,22 +7,15 @@ on:
       - dev
   workflow_dispatch:
 
-inputs:
-  github_token:
-    description: 'GitHub token for pushing GitHub pages files'
-    required: true
-  branch:
-    description: 'Branch name for pushing GitHub pages files'
-    required: true
-    default: "gh-pages"
-  folder:
-    description: 'Folder where Doxygen will generate the HTML build files'
-    required: true
-    default: "docs/html"
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        github_token: [$GITHUB_TOKEN]
+        branch: [gh-pages]
+        folder: [docs/html]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -38,12 +31,12 @@ jobs:
         shell: bash
 
       - name: Create .nojekyll
-        run: touch ${{ inputs.folder }}/.nojekyll
+        run: touch ${{ matrix.folder }}/.nojekyll
         shell: bash
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          github_token: ${{ inputs.github_token }}
-          branch: ${{ inputs.branch }}
-          folder: ${{ inputs.folder }}
+          github_token: ${{ matrix.github_token }}
+          branch: ${{ matrix.branch }}
+          folder: ${{ matrix.folder }}
