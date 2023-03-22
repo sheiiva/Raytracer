@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  doxygen-gh-deploy:
+  ghdeploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
