@@ -17,11 +17,11 @@ jobs:
         run: cmake -S . -B build && cmake --build build
         shell: bash
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+      - name: Save build/ in cache
+        uses: actions/cache/save@v3
         with:
-          name: build
           path: build/
+          key: build
 
   tests:
     runs-on: ubuntu-latest
@@ -30,11 +30,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Download build artifacts
-        uses: actions/download-artifact@v3
+      - uses: actions/checkout@v3
+
+      - name: Restore cached Primes
+        uses: actions/cache/restore@v3
         with:
-          name: build
-          path: .
+          path: build/
+          key: build
 
       - name: Install Requirements
         run: sudo apt-get install libconfig++-dev doxygen graphviz -y
