@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  doxygen-gh-deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        github_token: [$GH_PAGES_TOKEN]
+        github_token: [$GITHUB_TOKEN]
         branch: [gh-pages]
         folder: [docs/html]
 
@@ -38,9 +38,12 @@ jobs:
         run: touch ${{ matrix.folder }}/.nojekyll
         shell: bash
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          github_token: ${{ matrix.github_token }}
-          branch: ${{ matrix.branch }}
-          folder: ${{ matrix.folder }}
+    - name: GH Pages Deployment
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/html/
+        enable_jekyll: false
+        allow_empty_commit: false
+        force_orphan: true
+        publish_branch: gh-pages
