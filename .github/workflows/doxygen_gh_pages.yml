@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  ghdeploy:
+  deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
