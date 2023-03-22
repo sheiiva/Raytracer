@@ -1,0 +1,49 @@
+name: 'Doxygen GitHub Pages Deploy Action'
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  workflow_dispatch:
+
+jobs:
+  gh-pages-dox-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        github_token: [$GITHUB_TOKEN]
+        branch: [gh-pages]
+        folder: [docs/html]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: "true"
+
+      - name: Install Requiremenst
+        run: sudo apt-get install libconfig++-dev -y
+        shell: bash
+
+      - name: Install Doxygen
+        run: sudo apt-get install doxygen graphviz -y
+        shell: bash
+
+      - name: Generate Doxygen documentation
+        run: cmake -S . -B build && cmake --build build
+        shell: bash
+
+      - name: Create .nojekyll
+        run: touch ${{ matrix.folder }}/.nojekyll
+        shell: bash
+
+      - name: GH Pages Deployment
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/html/
+          enable_jekyll: false
+          allow_empty_commit: false
+          force_orphan: true
+          publish_branch: gh-pages
