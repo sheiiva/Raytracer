@@ -1,0 +1,47 @@
+name: Builds and unit tests
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Requirements
+        run: sudo apt-get install libconfig++-dev doxygen graphviz -y
+        shell: bash
+
+      - name: Build
+        run: cmake -S . -B build && cmake --build build
+        shell: bash
+
+      - name: Save build/ in cache
+        uses: actions/cache/save@v3
+        with:
+          path: build/
+          key: build
+
+  tests:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/checkout@v3
+
+      - name: Restore cached Primes
+        uses: actions/cache/restore@v3
+        with:
+          path: build/
+          key: build
+
+      - name: Install Requirements
+        run: sudo apt-get install libconfig++-dev doxygen graphviz -y
+        shell: bash
+
+      - name: Run GTests
+        run: ./build/bin/RayTracer_tests
+        shell: bash
